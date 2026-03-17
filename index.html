@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emby-tronic | Premium Auto Detailing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-gold: #d4af37;
+            --deep-dark: #121212;
+            --card-bg: #1e1e1e;
+        }
+        body {
+            background-color: var(--deep-dark);
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Hero Section */
+        .hero {
+            padding: 120px 0;
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                        url('https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=1500');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            border-bottom: 2px solid var(--main-gold);
+        }
+        .hero h1 { letter-spacing: 4px; }
+
+        /* Service Card */
+        .tier-card {
+            background: var(--card-bg);
+            border: 1px solid var(--main-gold);
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 550px;
+            margin: -60px auto 60px auto;
+            position: relative;
+            z-index: 10;
+        }
+        .price-tag {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--main-gold);
+        }
+
+        /* Forms */
+        .form-control {
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            color: white;
+        }
+        .form-control:focus {
+            background-color: #333;
+            border-color: var(--main-gold);
+            color: white;
+            box-shadow: none;
+        }
+        .btn-gold {
+            background-color: var(--main-gold);
+            color: #000;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-gold:hover {
+            background-color: #ffffff;
+            color: #000;
+            transform: translateY(-2px);
+        }
+        footer {
+            border-top: 1px solid #333;
+            margin-top: 80px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-2 fw-bold text-uppercase">Elite Detail</h1>
+            <p class="lead text-uppercase" style="letter-spacing: 2px; color: var(--main-gold);">Standardized Excellence</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="tier-card text-center shadow-lg">
+            <h2 class="h4 text-uppercase mb-2">The Full Reset</h2>
+            <div class="price-tag mb-3">$200</div>
+            <p class="text-secondary mb-4 italic">Complete restoration for any passenger vehicle.</p>
+            
+            <ul class="list-unstyled text-start mb-5 mx-auto" style="max-width: 400px;">
+                <li class="mb-2">⭐ <strong>Exterior:</strong> Foam bath, clay bar, & ceramic sealant.</li>
+                <li class="mb-2">⭐ <strong>Wheels:</strong> Deep barrel clean & tire dressing.</li>
+                <li class="mb-2">⭐ <strong>Interior:</strong> Full steam extraction & leather treatment.</li>
+                <li class="mb-2">⭐ <strong>Glass:</strong> Hydrophobic coating on all windows.</li>
+                <li class="mb-2">⭐ <strong>Extras:</strong> Engine bay detail & door jamb polish.</li>
+            </ul>
+            
+            <a href="#booking-form" class="btn btn-gold btn-lg w-100 py-3">BOOK YOUR SLOT</a>
+        </div>
+    </section>
+
+    <section id="booking-form" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="text-center mb-5">
+                    <h3 class="fw-bold">Request a Booking</h3>
+                    <p class="text-secondary">Fill out the details below and I'll reach out to confirm your time.</p>
+                </div>
+
+                <form action="https://formspree.io/f/your_unique_id" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label small text-uppercase text-secondary">Full Name</label>
+                        <input type="text" name="name" class="form-control form-control-lg" placeholder="Emby Matthews" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label small text-uppercase text-secondary">Email</label>
+                        <input type="email" name="email" class="form-control form-control-lg" placeholder="name@email.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label small text-uppercase text-secondary">Vehicle Details</label>
+                        <input type="text" name="vehicle" class="form-control form-control-lg" placeholder="Year, Make, Model" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label small text-uppercase text-secondary">Preferred Date / Notes</label>
+                        <textarea name="message" class="form-control form-control-lg" rows="4" placeholder="Any specific concerns (pet hair, stains, etc.)?"></textarea>
+                    </div>
+
+                    <input type="hidden" name="_subject" value="New $200 Full Reset Inquiry">
+                    <button type="submit" class="btn btn-gold btn-lg w-100 py-3">SUBMIT REQUEST</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center">
+        <p class="mb-0">&copy; 2026 Emby-tronic Car Care</p>
+        <small>Premium Detailing Services | Quality Over Quantity</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
