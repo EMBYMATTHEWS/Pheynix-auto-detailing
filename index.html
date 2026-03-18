@@ -1,72 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emby-tronic | Professional Car Care</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root { --main-gold: #d4af37; --deep-dark: #121212; }
-        body { background-color: var(--deep-dark); color: #ffffff; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .hero { padding: 120px 0; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1552930294-6b595f4c2974?auto=format&fit=crop&q=80&w=1500'); background-size: cover; text-align: center; border-bottom: 1px solid #333; }
-        .tier-card { background: #1e1e1e; border: 1px solid #333; border-radius: 12px; padding: 50px; max-width: 500px; margin: -60px auto 60px auto; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
-        .price-tag { font-size: 3.5rem; font-weight: 700; color: var(--main-gold); margin: 15px 0; }
-        .form-control { background-color: #2a2a2a; border: 1px solid #444; color: white; padding: 12px; }
-        .form-control:focus { background-color: #333; border-color: var(--main-gold); color: white; box-shadow: none; }
-        .btn-gold { background-color: var(--main-gold); color: #000; font-weight: bold; padding: 15px; border: none; }
-        .btn-gold:hover { background-color: #fff; transform: translateY(-2px); transition: 0.3s; }
-        .disclaimer { font-size: 0.75rem; color: #666; margin-top: 20px; line-height: 1.4; }
-    </style>
-</head>
-<body>
-
-    <header class="hero">
-        <div class="container">
-            <h1 class="display-4 fw-bold">EMBY-TRONIC CAR CARE</h1>
-            <p class="text-uppercase mb-0" style="letter-spacing: 3px; color: var(--main-gold);">Professional Appearance Solutions</p>
-        </div>
-    </header>
-
-    <section class="container">
-        <div class="tier-card text-center">
-            <h2 class="h5 text-uppercase text-secondary">The Full Detail</h2>
-            <div class="price-tag">$200</div>
-            <p class="mb-4">A comprehensive cleaning and rejuvenation package designed to improve the overall aesthetic and condition of your vehicle.</p>
-            
-            <div class="text-start border-top border-bottom border-secondary py-3 mb-4">
-                <p class="mb-2">● Professional Exterior Wash & Dry</p>
-                <p class="mb-2">● General Interior Surface Cleaning</p>
-                <p class="mb-0">● Professional Finishing Touches</p>
-            </div>
-            
-            <a href="#booking-form" class="btn btn-gold btn-lg w-100">REQUEST SERVICE</a>
-            
-            <p class="disclaimer">
-                *Service scope is determined upon vehicle inspection. Results may vary based on vehicle age, condition, and previous maintenance. Emby-tronic is not responsible for pre-existing damage or mechanical issues.
-            </p>
-        </div>
-    </section>
-
-    <section id="booking-form" class="container py-5">
+<section id="booking-form" class="container py-5">
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form action="https://formspree.io/f/your_unique_id" method="POST">
-                    <input type="text" name="name" class="form-control mb-3" placeholder="Full Name" required>
-                    <input type="email" name="email" class="form-control mb-3" placeholder="Email Address" required>
-                    <input type="text" name="vehicle" class="form-control mb-3" placeholder="Vehicle Year/Make/Model" required>
-                    <textarea name="message" class="form-control mb-4" rows="4" placeholder="Requested service date and any general notes..."></textarea>
-                    
-                    <input type="hidden" name="_subject" value="New Detail Inquiry ($200)">
-                    <button type="submit" class="btn btn-gold btn-lg w-100">SUBMIT INQUIRY</button>
-                </form>
+            <div class="col-lg-8 col-md-10">
+                <div class="booking-container p-4 p-md-5">
+                    <div class="text-center mb-5">
+                        <h2 class="display-6 fw-bold text-uppercase" style="letter-spacing: 2px;">Inquiry & Schedule</h2>
+                        <div class="mx-auto mt-2" style="width: 50px; height: 3px; background: var(--main-gold);"></div>
+                    </div>
+
+                    <form action="https://formspree.io/f/your_unique_id" method="POST" class="row g-4">
+                        <div class="col-md-6">
+                            <label class="form-label text-secondary small text-uppercase fw-bold">Full Name</label>
+                            <input type="text" name="name" class="form-control custom-input" placeholder="e.g. Emby Matthews" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-secondary small text-uppercase fw-bold">Email Address</label>
+                            <input type="email" name="email" class="form-control custom-input" placeholder="name@email.com" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label text-secondary small text-uppercase fw-bold">Vehicle Details</label>
+                            <input type="text" name="vehicle" class="form-control custom-input" placeholder="Year, Make, and Model" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label text-secondary small text-uppercase fw-bold">Service Notes / Availability</label>
+                            <textarea name="message" class="form-control custom-input" rows="4" placeholder="Tell us about the vehicle's current condition and your preferred schedule..."></textarea>
+                        </div>
+
+                        <div class="col-12 text-center mt-5">
+                            <input type="hidden" name="_subject" value="New $200 Detail Request">
+                            <button type="submit" class="btn btn-gold-outline btn-lg px-5 py-3 text-uppercase">
+                                Send Inquiry
+                            </button>
+                            <p class="mt-3 small text-muted italic" style="font-size: 0.7rem;">
+                                *Submission does not guarantee a booking. We will contact you to confirm details and availability.
+                            </p>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-5 text-center border-top border-secondary mt-5">
-        <p class="text-secondary small">&copy; 2026 Emby-tronic. All rights reserved.</p>
+    <footer class="py-5 text-center border-top border-secondary mt-5" style="background: #0a0a0a;">
+        <p class="text-secondary small mb-1">&copy; 2026 Emby-tronic Car Care</p>
+        <p class="text-muted" style="font-size: 0.65rem; max-width: 600px; margin: 0 auto; padding: 0 20px;">
+            Professional Detailing Services. All work subject to vehicle inspection. Emby-tronic is not liable for pre-existing conditions or mechanical issues.
+        </p>
     </footer>
 
-</body>
-</html>
+    <style>
+        .booking-container {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+        }
+        .custom-input {
+            background-color: #121212 !important;
+            border: 1px solid #333 !important;
+            border-radius: 8px !important;
+            color: #fff !important;
+            padding: 15px !important;
+            transition: all 0.3s ease;
+        }
+        .custom-input:focus {
+            border-color: var(--main-gold) !important;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.2) !important;
+        }
+        .btn-gold-outline {
+            background: transparent;
+            color: var(--main-gold);
+            border: 2px solid var(--main-gold);
+            font-weight: 800;
+            letter-spacing: 1px;
+            transition: 0.4s;
+        }
+        .btn-gold-outline:hover {
+            background: var(--main-gold);
+            color: #000;
+            transform: scale(1.05);
+        }
+        .italic { font-style: italic; }
+    </style>
