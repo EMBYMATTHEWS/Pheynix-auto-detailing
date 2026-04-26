@@ -1,0 +1,88 @@
+{
+  "streaming_services": {
+    "spotify": {
+      "status": "Pending",
+      "artist_url": "",
+      "monthly_listeners": 0,
+      "monthly_revenue": "$0.00",
+      "top_tracks": []
+    },
+    "apple_music": {
+      "status": "Pending",
+      "artist_url": "",
+      "monthly_listeners": 0,
+      "monthly_revenue": "$0.00"
+    },
+    "youtube_music": {
+      "status": "Pending",
+      "artist_url": "",
+      "monthly_listeners": 0,
+      "monthly_revenue": "$0.00"
+    },
+    "amazon_music": {
+      "status": "Pending",
+      "artist_url": "",
+      "monthly_listeners": 0,
+      "monthly_revenue": "$0.00"
+    },
+    "deezer": {
+      "status": "Pending",
+      "artist_url": "",
+      "monthly_listeners": 0,
+      "monthly_revenue": "$0.00"
+    },
+    "tidal": {
+      "status": "Pending",
+      "artist_url": "",
+      "monthly_listeners": 0,
+      "monthly_revenue": "$0.00"
+    }
+  },
+  "distribution_services": [
+    "DistroKid",
+    "TuneCore",
+    "CD Baby",
+    "Symphonic",
+    "Landr"
+  ],
+  "social_platforms": {
+    "instagram": {
+      "status": "Pending",
+      "followers": 0,
+      "engagement_rate": "0%"
+    },
+    "tiktok": {
+      "status": "Pending",
+      "followers": 0,
+      "engagement_rate": "0%"
+    },
+    "youtube": {
+      "status": "Pending",
+      "subscribers": 0,
+      "views": 0
+    },
+    "twitter": {
+      "status": "Pending",
+      "followers": 0
+    },
+    "spotify_profile": {
+      "status": "Pending",
+      "followers": 0
+    }
+  },
+  "revenue_streams": {
+    "streaming": "$0/month",
+    "singles_sales": "$0/month",
+    "merchandise": "$0/month",
+    "licensing": "$0/month",
+    "live_shows": "$0/month",
+    "fan_donations": "$0/month"
+  },
+  "marketing_channels": {
+    "email_newsletter": "Pending",
+    "social_media_ads": "Pending",
+    "playlist_pitching": "Pending",
+    "influencer_collabs": "Pending",
+    "radio_promotion": "Pending"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "car_dealerships": [
+    "Honda Dealership Service Dept",
+    "Toyota Certified Pre-Owned",
+    "Ford Trade-In Department",
+    "BMW Pre-Delivery Inspection",
+    "Mercedes CPO Program"
+  ],
+  "rental_locations": [
+    "Enterprise Rent-A-Car",
+    "Hertz Fleet Management",
+    "Avis Business Solutions",
+    "Budget Fleet Services",
+    "Sixt Rental Car"
+  ],
+  "ride_share_fleets": [
+    "Uber Partner Car Wash",
+    "Lyft Driver Maintenance",
+    "Fleet Driver Services",
+    "Rideshare Detailing Co-op"
+  ],
+  "luxury_areas": [
+    "Tesla Service Centers",
+    "Luxury Car Showrooms",
+    "High-end Residential Areas",
+    "Country Club Parking Lots"
+  ]
+}

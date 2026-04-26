@@ -1,0 +1,32 @@
+{
+  "car_dealerships": {
+    "description": "Car dealerships with service departments",
+    "priority": "High",
+    "potential_value": "$200-$500 per vehicle",
+    "pitch": "Regular fleet detailing for trade-in and demo vehicles"
+  },
+  "rental_companies": {
+    "description": "Enterprise, Hertz, Avis locations",
+    "priority": "High",
+    "potential_value": "$200-$300 per vehicle",
+    "pitch": "Quick turn-around detailing between rentals"
+  },
+  "luxury_car_owners": {
+    "description": "Tesla, BMW, Mercedes owners",
+    "priority": "Medium",
+    "potential_value": "$200-$400 per service",
+    "pitch": "Premium detailing for high-end vehicles"
+  },
+  "ride_share_drivers": {
+    "description": "Uber/Lyft drivers with fleets",
+    "priority": "Medium",
+    "potential_value": "$200 per car",
+    "pitch": "Monthly maintenance packages"
+  },
+  "fleet_owners": {
+    "description": "Local delivery and service fleets",
+    "priority": "High",
+    "potential_value": "$200+ per vehicle",
+    "pitch": "Bulk contracts with discounts"
+  }
+}
