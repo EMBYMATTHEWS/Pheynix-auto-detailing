@@ -35,6 +35,7 @@ logs/investment-log.txt
 *~
 
 # OS
+.DS_Store
 Thumbs.db
 
 # Config (if any sensitive data)
